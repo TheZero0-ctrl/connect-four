@@ -1,6 +1,8 @@
 require_relative "./lib/board"
 require_relative "./lib/display"
+require_relative "./lib/player"
+require_relative "./lib/connect-four"
 
-board = Board.new
+connect_four = ConnectFour.new
 
-puts board.update_grid(0,board.yellow_circle)
+connect_four.play
